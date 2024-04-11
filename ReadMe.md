@@ -1,4 +1,4 @@
-# Budget-Tracker-Full-Stack
+# Budget-Tracking-Application
 
 **Technology used:** ReactJS, NodeJS, Express, MongoDB, Mongoose, Netlify, Render
 
