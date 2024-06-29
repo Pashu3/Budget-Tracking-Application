@@ -13,10 +13,14 @@ const BASE_URL = process.env.BASE_URL;
 //---------------------------------------
 // MIDDLEWARES
 //---------------------------------------
+app.use(cors({
+    origin: 'http://localhost:3001', // Allow only your frontend
+    methods: 'GET,POST,PUT,DELETE,OPTIONS',
+    allowedHeaders: 'Content-Type,Authorization',
+  }));  
 
 app.use(express.json()); //parse incoming data
 
-app.use(cors());
 
 //---------------------------------------
 // ROUTES
