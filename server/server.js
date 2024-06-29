@@ -13,14 +13,10 @@ const BASE_URL = process.env.BASE_URL;
 //---------------------------------------
 // MIDDLEWARES
 //---------------------------------------
-app.use(cors({
-    origin: 'https://lighthearted-sundae-81a7cc.netlify.app', // Allow only your frontend
-    methods: 'GET,POST,PUT,DELETE,OPTIONS',
-    allowedHeaders: 'Content-Type,Authorization',
-  }));  
 
 app.use(express.json()); //parse incoming data
 
+app.use(cors());
 
 //---------------------------------------
 // ROUTES
@@ -47,6 +43,5 @@ app.use(globalErrHandler);
 //---------------------------------------
 
 const PORT = process.env.PORT || 3000;
-
 
 app.listen(PORT, console.log(`Server is up and running on port ${PORT}`));
