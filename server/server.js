@@ -14,7 +14,7 @@ const BASE_URL = process.env.BASE_URL;
 // MIDDLEWARES
 //---------------------------------------
 app.use(cors({
-    origin: 'http://localhost:3001', // Allow only your frontend
+    origin: 'https://lighthearted-sundae-81a7cc.netlify.app', // Allow only your frontend
     methods: 'GET,POST,PUT,DELETE,OPTIONS',
     allowedHeaders: 'Content-Type,Authorization',
   }));  
